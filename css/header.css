@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/* header.css */
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header .header-top {
+    width: 100%;
+    background-color: lightgray;
+    height: 40px;
+    line-height: 40px;
+}
+
+header .header-top ul {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: right;
+    /* outline: 2px solid red; */
+}
+
+header .header-top li {
+    float: none;
+    display: inline-block;
+    margin-left: 10px;
+    /* 인라인의 성격을 가져서 text처럼 쓸 수 있음 */
+    /* outline: 2px solid blueviolet; */
+}
+
+header .header-top li:last-child {}
+
+header .header-top li:last-child a {
+    width: 60px;
+    background: rgb(47, 28, 17) url(../img/ico_user_info_line.png) no-repeat center;
+
+    text-indent: -9999px;
+    text-align: left;
+    /* 상위요소 ul의 text-align 값이 right으로 되어 있어서 
+    a태그 안의 내용이 li 공간안에 오른쪽으로 정렬,
+    text-indent로 시작 지점이 바뀌었음에도 a의 글자가 오른쪽으로 정렬되어
+    li 내용이 겹쳐 보이므로 text-align을 left로 변경 */
+
+}
+
+
+header .header-bottom {
+    background-color: aquamarine;
+
+    width: 1280px;
+    margin: 0 auto;
+    height: 100px;
+    /* 부모요소가 높이를 잡고 있으면 float 해제를 안해도 됨  */
+}
+
+header .header-bottom .logo {
+    outline: 1px solid red;
+    float: left;
+    height: 100%;
+    /* 부모요소의 높이만큼 잡힌다 */
+    /* 너비를 지정하지 않으면 
+    내용만큼 너비를 갖는다 */
+    padding: 15px 0;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+header .header-bottom .logo a {}
+
+header .header-bottom .logo a img {
+    height: 70px;
+    display: block;
+}
+
+
+header .header-bottom .gnb {
+    outline: 1px solid red;
+    float: left;
+}
+
+header .header-bottom .gnb ul {}
+
+header .header-bottom .gnb ul li {
+    margin: 0 15px;
+}
+
+header .header-bottom .gnb ul li a {
+    line-height: 100px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(47, 28, 17) ;
+    text-transform: uppercase; /* 대문자로 바꾸는 것 */
+}
+
+
+header .header-bottom .search {
+    outline: 1px solid red;
+    float: right;
+
+    height: 100%;
+}
+
+.search fieldset {
+    border: none;
+}
+
+.search fieldset legend {
+    display: none;
+}
+
+
+
+header .header-bottom .search input {
+    border: 0;
+
+outline: ;}
+
+.search input[type="search"] {}
+
+.search input[type="submit"] {}
